@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Kalkulator Sederhana </h1>
+<form>
+<input type="text" id="bila" name="bila">
+<input type="text" id="bilb" name="bilb">
+<br><br>
+<input type="button" value="+" onclick=jumlah()></input>
+<input type="button" value="-" onclick=kurang()></input>
+<input type="button" value="*" onclick=kali()></input>
+<input type="button" value="/" onclick=bagi()></input>
+<p>Hasil: <span id="hasil"></span></p>
+
+</form>
+
+<script>
+function jumlah() {
+    const bila = parseInt(document.getElementById('bila').value);
+	const bilb = parseInt(document.getElementById('bilb').value);
+	const hasil = bila + bilb;
+	document.getElementById('hasil').textContent = hasil;
+}
+function kurang() {
+    const bila = parseInt(document.getElementById('bila').value);
+	const bilb = parseInt(document.getElementById('bilb').value);
+	const hasil = bila - bilb;
+	document.getElementById('hasil').textContent = hasil;
+}
+function kali() {
+    const bila = parseInt(document.getElementById('bila').value);
+	const bilb = parseInt(document.getElementById('bilb').value);
+	const hasil = bila * bilb;
+	document.getElementById('hasil').textContent = hasil;
+}
+function bagi() {
+    const bila = parseInt(document.getElementById('bila').value);
+	const bilb = parseInt(document.getElementById('bilb').value);
+	const hasil = bila / bilb;
+	document.getElementById('hasil').textContent = hasil;
+}
+		
+</script>
+
+</body>
+</html>
